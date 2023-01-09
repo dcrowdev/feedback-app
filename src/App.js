@@ -6,8 +6,10 @@ import FeedbackForm from './components/FeedbackForm';
 import AboutPage from './pages/AboutPage';
 import AboutIconLink from './components/AboutIconLink';
 import { FeedbackProvider } from './context/FeedbackContext';
+import { useState } from 'react';
 
 function App() {
+  const [onAbout, setOnAbout] = useState(true);
 
   return (
     <FeedbackProvider>
